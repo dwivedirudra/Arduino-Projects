@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cb:CODEBLOCKS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://education.mit.edu/openblocks/ns http://education.mit.edu/openblocks/codeblocks.xsd" xmlns:cb="http://education.mit.edu/openblocks/ns">
+<Pages collapsible-pages="yes" drawer-with-page="yes">
+<Page page-color="160 160 160" page-drawer="Main" page-infullview="yes" page-name="Main" page-width="1366">
+<PageBlocks>
+<Block genus-name="rfidprint" id="181">
+<Location>
+<X>375</X>
+<Y>411</Y>
+</Location>
+<BeforeBlockId>180</BeforeBlockId>
+</Block>
+<Block genus-name="rfidread" id="180">
+<Location>
+<X>375</X>
+<Y>387</Y>
+</Location>
+<BeforeBlockId>178</BeforeBlockId>
+<AfterBlockId>181</AfterBlockId>
+</Block>
+<Block genus-name="rfidcard" id="179">
+<Location>
+<X>378</X>
+<Y>358</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="178" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="if" id="178">
+<Location>
+<X>304</X>
+<Y>355</Y>
+</Location>
+<BeforeBlockId>172</BeforeBlockId>
+<Sockets num-sockets="2">
+<BlockConnector con-block-id="179" connector-kind="socket" connector-type="boolean" init-type="boolean" label="test" position-type="single"/>
+<BlockConnector con-block-id="180" connector-kind="socket" connector-type="cmd" init-type="cmd" label="then" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="init_rfid" id="177">
+<Location>
+<X>305</X>
+<Y>223</Y>
+</Location>
+<BeforeBlockId>175</BeforeBlockId>
+</Block>
+<Block genus-name="rfidRST" id="175">
+<Location>
+<X>305</X>
+<Y>193</Y>
+</Location>
+<BeforeBlockId>173</BeforeBlockId>
+<AfterBlockId>177</AfterBlockId>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="176" connector-kind="socket" connector-type="number" init-type="number" label="" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="number" id="176">
+<Label>9</Label>
+<Location>
+<X>431</X>
+<Y>196</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="175" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="program" id="172">
+<Location>
+<X>186</X>
+<Y>155</Y>
+</Location>
+<Sockets num-sockets="2">
+<BlockConnector con-block-id="173" connector-kind="socket" connector-type="cmd" init-type="cmd" label="setup" position-type="single"/>
+<BlockConnector con-block-id="178" connector-kind="socket" connector-type="cmd" init-type="cmd" label="loop" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="rfidSDA" id="173">
+<Location>
+<X>305</X>
+<Y>163</Y>
+</Location>
+<BeforeBlockId>172</BeforeBlockId>
+<AfterBlockId>175</AfterBlockId>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="174" connector-kind="socket" connector-type="number" init-type="number" label="" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="number" id="174">
+<Label>10</Label>
+<Location>
+<X>415</X>
+<Y>166</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="173" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+</PageBlocks>
+</Page>
+</Pages>
+</cb:CODEBLOCKS>

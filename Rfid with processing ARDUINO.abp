@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cb:CODEBLOCKS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://education.mit.edu/openblocks/ns http://education.mit.edu/openblocks/codeblocks.xsd" xmlns:cb="http://education.mit.edu/openblocks/ns">
+<Pages collapsible-pages="yes" drawer-with-page="yes">
+<Page page-color="160 160 160" page-drawer="Main" page-infullview="yes" page-name="Main" page-width="1366">
+<PageBlocks>
+<Block genus-name="variable_number" id="196">
+<Label>ID</Label>
+<Location>
+<X>648</X>
+<Y>387</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="195" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="glue_sn" id="195">
+<Location>
+<X>588</X>
+<Y>387</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="192" connector-kind="plug" connector-type="string" init-type="string" label="" position-type="single"/>
+</Plug>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="196" connector-kind="socket" connector-type="number" init-type="number" label="" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="serial_print" id="192">
+<Location>
+<X>406</X>
+<Y>384</Y>
+</Location>
+<BeforeBlockId>187</BeforeBlockId>
+<Sockets num-sockets="2">
+<BlockConnector con-block-id="195" connector-kind="socket" connector-type="string" init-type="string" label="message2" position-type="single"/>
+<BlockConnector con-block-id="194" connector-kind="socket" connector-type="boolean" init-type="boolean" label="new line" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="true" id="194">
+<Label>true</Label>
+<Location>
+<X>588</X>
+<Y>411</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="192" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="rfidcheck" id="190">
+<Location>
+<X>652</X>
+<Y>357</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="187" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="single"/>
+</Plug>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="191" connector-kind="socket" connector-type="number" init-type="number" label="#" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="number" id="191">
+<Label>0</Label>
+<Location>
+<X>768</X>
+<Y>357</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="190" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="setter_variable_number" id="187">
+<Location>
+<X>406</X>
+<Y>330</Y>
+</Location>
+<BeforeBlockId>186</BeforeBlockId>
+<AfterBlockId>192</AfterBlockId>
+<Sockets num-sockets="2">
+<BlockConnector con-block-id="188" connector-kind="socket" connector-type="number" init-type="number" label="variable" position-type="single"/>
+<BlockConnector con-block-id="190" connector-kind="socket" connector-type="number" init-type="number" label="value" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="variable_number" id="188">
+<Label>ID</Label>
+<Location>
+<X>652</X>
+<Y>333</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="187" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="rfidread" id="186">
+<Location>
+<X>406</X>
+<Y>306</Y>
+</Location>
+<BeforeBlockId>184</BeforeBlockId>
+<AfterBlockId>187</AfterBlockId>
+</Block>
+<Block genus-name="rfidcard" id="185">
+<Location>
+<X>409</X>
+<Y>277</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="184" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="if" id="184">
+<Location>
+<X>335</X>
+<Y>274</Y>
+</Location>
+<BeforeBlockId>173</BeforeBlockId>
+<Sockets num-sockets="2">
+<BlockConnector con-block-id="185" connector-kind="socket" connector-type="boolean" init-type="boolean" label="test" position-type="single"/>
+<BlockConnector con-block-id="186" connector-kind="socket" connector-type="cmd" init-type="cmd" label="then" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="variable_number" id="183">
+<Label>ID</Label>
+<Location>
+<X>582</X>
+<Y>211</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="179" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="setter_variable_number" id="179">
+<Location>
+<X>336</X>
+<Y>208</Y>
+</Location>
+<BeforeBlockId>178</BeforeBlockId>
+<Sockets num-sockets="2">
+<BlockConnector con-block-id="183" connector-kind="socket" connector-type="number" init-type="number" label="variable" position-type="single"/>
+<BlockConnector con-block-id="181" connector-kind="socket" connector-type="number" init-type="number" label="value" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="number" id="181">
+<Label>0</Label>
+<Location>
+<X>582</X>
+<Y>235</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="179" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="init_rfid" id="178">
+<Location>
+<X>336</X>
+<Y>88</Y>
+</Location>
+<BeforeBlockId>176</BeforeBlockId>
+<AfterBlockId>179</AfterBlockId>
+</Block>
+<Block genus-name="rfidRST" id="176">
+<Location>
+<X>336</X>
+<Y>58</Y>
+</Location>
+<BeforeBlockId>174</BeforeBlockId>
+<AfterBlockId>178</AfterBlockId>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="177" connector-kind="socket" connector-type="number" init-type="number" label="" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="number" id="177">
+<Label>9</Label>
+<Location>
+<X>462</X>
+<Y>61</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="176" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="rfidSDA" id="174">
+<Location>
+<X>336</X>
+<Y>28</Y>
+</Location>
+<BeforeBlockId>173</BeforeBlockId>
+<AfterBlockId>176</AfterBlockId>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="175" connector-kind="socket" connector-type="number" init-type="number" label="" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="number" id="175">
+<Label>10</Label>
+<Location>
+<X>446</X>
+<Y>31</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="174" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="program" id="173">
+<Location>
+<X>217</X>
+<Y>20</Y>
+</Location>
+<Sockets num-sockets="2">
+<BlockConnector con-block-id="174" connector-kind="socket" connector-type="cmd" init-type="cmd" label="setup" position-type="single"/>
+<BlockConnector con-block-id="184" connector-kind="socket" connector-type="cmd" init-type="cmd" label="loop" position-type="single"/>
+</Sockets>
+</Block>
+</PageBlocks>
+</Page>
+</Pages>
+</cb:CODEBLOCKS>
